@@ -1,0 +1,26 @@
+body {
+    color: var(--color-primery);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-top: 80px;
+}
+
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    display: flex;
+    height: auto;
+}
