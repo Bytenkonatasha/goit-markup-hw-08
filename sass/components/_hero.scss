@@ -11,32 +11,33 @@
     height: 600px;
     margin-left: auto;
     margin-right: auto;
+
+  @media (min-resolution: 2dppx) {
+    .hero {
+        background-image: url(../images/header480x400@2x.jpg);
+      }
+    }
+  }  
+  @media (min-width: 768px) {
+    .hero {
+    background-image: url(../images/header768x400.jpg);
     @media (min-resolution: 2dppx) {
         .hero {
-          background-image: url(../images/header480x400@2x.jpg);
+          background-image: url(../images/header768x400@2x.jpg);
         }
       }
-}  
-@media (min-width: 481px) {
-  .hero {
-    background-image: url(../images/header768x400.jpg);
-  }
-    @media (min-resolution: 2dppx) {
-      .hero {
-        background-image: url(../images/header768x400@2x.jpg);
-      }
-    }
-}
-@media (min-width: 769px) {
+   }
+ }
+@media (min-width: 1200px) {
   .hero {
     background-image: url(../images/header1600x600.jpg);
-  }
     @media (min-resolution: 2dppx) {
-      .hero {
-        background-image: url(../images/header1600x600@2x.jpg);
+        .hero {
+          background-image: url(../images/header1600x600@2x.jpg);
+        }
       }
-    }
-}
+  }
+  }
 .hero-caption {
   color: var(--color-accent);
 

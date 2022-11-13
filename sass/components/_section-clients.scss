@@ -1,13 +1,21 @@
 .clients {
     display: flex;
     gap: 30px;
-
-    &__item {
-    width: 170px;
+    flex-wrap: wrap;
+    justify-content: center;     
+}
+.clients__item {
+    width: 210px;
     height: 92px;
+        
+    @media (min-width: 767px) {
+        width: 226px;
+    }
+    
+    @media (min-width: 1200px) {
+        width: 170px;
     }
 }
-
 
 
 .clients__link {
