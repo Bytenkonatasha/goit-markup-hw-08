@@ -37,6 +37,64 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="header__button js-open-menu">
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="header__icons" href="./images/icons.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu js-menu-container">
+            <div class="container">
+                <button class="mobile-menu__close-button js-close-menu">
+                    <svg width="40" height="40">
+                        <use href="./images/icons.svg#icon-close-black-18dp-1"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-menu__nav">
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__items"><a class="mobile-menu__link" href="./index.html">Студія</a></li>
+                        <li class="mobile-menu__items"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="mobile-menu__items"><a class="mobile-menu__link" href="#">Контакти</a></li>
+                    </ul>
+                    <div class="bym">
+                        <ul class="mobile-menu__auth-nav">
+                            <li class="mobile-menu__items">
+                                <a class="mobile-menu__auth-nav-link" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mobile-menu__auth-nav-items">
+                                <a class="mobile-menu__auth-nav-link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-menu__social">
+                            <li class="mobile-menu__social-items">
+                                <a class="mobile-menu__social-link" href="#">Instagram <span
+                                        class="mobile-menu__symbol">|</span>
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social-items">
+                                <a class="mobile-menu__social-link" href="#">Twitter<span
+                                        class="mobile-menu__symbol">|</span>
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social-items">
+                                <a class="mobile-menu__social-link" href="#">Facebook<span
+                                        class="mobile-menu__symbol">|</span>
+                                </a>
+                            </li>
+                            <li class="mobile-menu__social-items">
+                                <a class="mobile-menu__social-link" href="#">LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    
         </div>
     </header>
     <main>
@@ -64,7 +122,13 @@
                     <li class="benefits">
                          <a class="benefits__box">
                             <div class="benefits__wrapper">
-                                <img src="./images/tehnokryk.jpg" alt="Команда веб-сайту" width="370">
+                                <img 
+                                srcset="./images/kryk_mob.jpg 450w,
+                                 ./images/kryk_tab.jpg 354w,
+                                 ./images/kryk_des.jpg 370w"
+                                src="./images/kryk_mob.jpg" 
+                                alt="Команда веб-сайту"
+                                sizes="(min-width: 1200px) 370px,(min-width: 768px) 354px,(min-width: 480px) 450px,  100vw">
                                 <div class="benefits__overlay">
                                      <p class="benefits__text"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -78,7 +142,13 @@
                     <li class="benefits">
                          <a class="benefits__box">
                                 <div class="benefits__wrapper">
-                                    <img class="pic" src="./images/orlean.jpg" alt="Два чоловіка грають в баскетбол" width="370">
+                                    <img 
+                                    srcset="./images/orlean_mob.jpg 450w,
+                                 ./images/orlean_tab.jpg 354w,
+                                 ./images/orlean_des.jpg 370w"
+                                    src="./images/orlean_mob.jpg" 
+                                    alt="Два чоловіка грають в баскетбол"
+                                    sizes="(min-width: 1200px) 370px,(min-width: 768px) 354px,(min-width: 480px) 450px,  100vw">
                                     <div class="benefits__overlay">
                                          <p class="benefits__text"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                     </div>
@@ -92,7 +162,13 @@
                     <li class="benefits">
                          <a class="benefits__box">
                             <div class="benefits__wrapper">
-                                <img class="pic" src="./images/seafood.jpg" alt="Логотип ресторану seafood" width="370">
+                                <img 
+                                srcset="./images/food_mob.jpg 450w,
+                                 ./images/food_tab.jpg 354w,
+                                 ./images/food_des.jpg 370w"
+                                src="./images/food_mob.jpg"
+                                alt="Логотип ресторану seafood"
+                                sizes="(min-width: 1200px) 370px,(min-width: 768px) 354px,(min-width: 480px) 450px,  100vw">
                                 <div class="benefits__overlay">
                                     <p class="benefits__text"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                </div>
@@ -106,7 +182,13 @@
                     <li class="benefits">
                           <a class="benefits__box">
                             <div class="benefits__wrapper">
-                                 <img class="pic" src="./images/prime.jpg" alt="Навушники" width="370">
+                                 <img
+                                 srcset="./images/prime_mob.jpg 450w,
+                                 ./images/prime_tab.jpg 354w,
+                                 ./images/prime_des.jpg 370w"
+                                 src="./images/prime_mob.jpg"
+                                 alt="Навушники"
+                                 sizes="(min-width: 1200px) 370px,(min-width: 768px) 354px,(min-width: 480px) 450px,  100vw">
                                  <div class="benefits__overlay">
                                      <p class="benefits__text"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                  </div>
@@ -120,7 +202,13 @@
                     <li class="benefits">
                         <a class="benefits__box">
                             <div class="benefits__wrapper">
-                                 <img class="pic" src="./images/boxes.jpg" alt="Дві коробки" width="370">
+                                 <img
+                                 srcset="./images/boxes_mob.jpg 450w,
+                                 ./images/boxes_tab.jpg 354w,
+                                 ./images/boxes_des.jpg 370w" 
+                                 src="./images/boxes_mob.jpg"
+                                 alt="Дві коробки"
+                                 sizes="(min-width: 1200px) 370px,(min-width: 768px) 354px,(min-width: 480px) 450px,  100vw">
                                  <div class="benefits__overlay">
                                      <p class="benefits__text"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -134,7 +222,13 @@
                     <li class="benefits">
                         <a class="benefits__box">
                             <div class="benefits__wrapper">
-                                 <img class="pic" src="./images/borders.jpg" alt="Монітор" width="370">
+                                 <img
+                                 srcset="./images/borders_mob.jpg 450w,
+                                 ./images/borders_tab.jpg 354w,
+                                 ./images/borders_des.jpg 370w"  
+                                 src="./images/borders_mob.jpg"
+                                 alt="Монітор"
+                                 sizes="(min-width: 1200px) 370px,(min-width: 768px) 354px,(min-width: 480px) 450px,  100vw">
                                  <div class="benefits__overlay">
                                      <p class="benefits__text"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -148,7 +242,13 @@
                     <li class="benefits">
                         <a class="benefits__box">
                              <div class="benefits__wrapper">
-                                 <img class="pic" src="./images/limited.jpg" alt="Розгорнутий журнал" width="370">
+                                 <img
+                                 srcset="./images/limited_mob.jpg 450w,
+                                 ./images/limited_tab.jpg 354w,
+                                 ./images/limited_des.jpg.jpg 370w" 
+                                 src="./images/limited_mob.jpg" 
+                                 alt="Розгорнутий журнал" 
+                                 sizes="(min-width: 1200px) 370px,(min-width: 768px) 354px,(min-width: 480px) 450px,  100vw">
                                  <div class="benefits__overlay">
                                      <p class="benefits__text"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                  </div>
@@ -162,7 +262,13 @@
                     <li class="benefits">
                         <a class="benefits__box">
                             <div class="benefits__wrapper">
-                                <img class="pic" src="./images/lab.jpg" alt="зображення ярлику" width="370">
+                                <img
+                                srcset="./images/lab_mob.jpg 450w,
+                                 ./images/lab_tab.jpg 354w,
+                                 ./images/lab_des.jpg.jpg 370w" 
+                                src="./images/lab_mob.jpg" 
+                                alt="зображення ярлику" 
+                                sizes="(min-width: 1200px) 370px,(min-width: 768px) 354px,(min-width: 480px) 450px,  100vw">
                                 <div class="benefits__overlay">
                                      <p class="benefits__text"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
@@ -176,7 +282,13 @@
                     <li class="benefits">
                         <a class="benefits__box">
                             <div class="benefits__wrapper">
-                                <img class="pic" src="./images/growing.jpg" alt="Робота за ноутбуком" width="370">
+                                <img 
+                                 srcset="./images/business_mob.jpg 450w,
+                                 ./images/business_tab.jpg 354w,
+                                 ./images/business_des.jpg.jpg 370w" 
+                                src="./images/business_mob.jpg" 
+                                alt="Робота за ноутбуком" 
+                                sizes="(min-width: 1200px) 370px,(min-width: 768px) 354px,(min-width: 480px) 450px,  100vw">
                                 <div class="benefits__overlay">
                                      <p class="benefits__text"> Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                </div>
@@ -255,7 +367,7 @@
                 <form class="footer-wrap__form">
                     <label for="mail"></label>
                     <input class="footer-wrap__input" id="mail" type="email" name="mail" placeholder="E-mail">
-                    <button class="buttons btn" type="submit">Підписатися
+                    <button class="buttons btn container" type="submit">Підписатися
                         <svg class="btn__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-icon-send">
                             </use>
@@ -266,6 +378,7 @@
     
         </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>
