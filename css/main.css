@@ -1468,7 +1468,7 @@ img {
 .features__item {
   padding-bottom: 30px;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .features__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
@@ -1482,6 +1482,10 @@ img {
         flex-basis: calc((100% - 120px) / 4);
     margin: 15px;
   }
+}
+
+.features__item--size {
+  padding-bottom: 0;
 }
 
 .features__title {
