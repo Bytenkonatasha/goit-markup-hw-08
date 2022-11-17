@@ -30,10 +30,10 @@
     justify-content: center;
     fill: #afb1b8;
 
-    &__link:hover,
-    &__link:focus {
-    fill: var(--color-brand);
-    border: 1px solid #2196f3;
+    &:hover,
+    &:focus {
+        fill: var(--color-brand);
+        border: 1px solid #2196f3;
     }
 }
 

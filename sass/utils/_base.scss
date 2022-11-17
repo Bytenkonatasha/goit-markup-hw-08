@@ -8,10 +8,8 @@ body {
     @media screen and (min-width: 768px) {
         padding-top: 80px;
         }
-    @media screen and (min-width: 1200px) {
-        padding-top: 80px;
-    }
-}                    
+}
+               
 li {
     list-style: none;
 }
@@ -23,10 +21,7 @@ ul {
     margin: 0;
     padding: 0;
 }
+img {
+    width: 100%;
+}
 
-// img {
-//     display: block;
-//     max-width: 100%;
-//     display: flex;
-//     height: auto;
-// }
